@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MM Force Picker Wheel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img src="image.png" alt="MM Force Logo" id="logo"> <!-- Logo based on your uploaded file -->
+    <h1>MM Force Picker Wheel</h1>
+  </header>
+
+  <main>
+    <section id="wheel-section" class="flex-container">
+      <!-- Wheel container (centered) -->
+      <div id="wheelContainer">
+        <canvas id="wheelCanvas"></canvas>
+        <div id="celebrationBox"></div> <!-- Celebration message directly under the wheel -->
+        <button id="spinButton">Spin the Wheel</button>
+      </div>
+
+      <!-- Input box for names on the right side, styled based on the logo colors -->
+      <div id="inputBox">
+        <h2>Entered Names</h2>
+        <ul id="inputList"></ul>
+        <input type="text" id="textInput" placeholder="Enter text option">
+        <button id="addInputButton">Add Input</button>
+        <button id="shuffleButton">Shuffle</button>
+        <button id="clearButton">Clear Inputs</button>
+      </div>
+    </section>
+
+    <section id="result-section">
+      <h2>Results</h2>
+      <p id="resultDisplay">No results yet...</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 MM Force</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
